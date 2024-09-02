@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+
+</head>
+<body>
+    <script>
+        // ejercicio 1:
+        const distancia = parseInt(prompt('Ingrese la distancia:'));
+
+		if (distancia <= 1000) {
+			console.log('Es conveniente ir a pie');
+		} else if (distancia > 1000 && distancia <= 10000 ) {
+			console.log('Es conveniente ir en bicicleta');
+		} else if (distancia > 10000 && distancia <= 30000 ) {
+			console.log('Es conveniente ir en colectivo');
+		} else if (distancia > 30000 && distancia <= 100000 ) {
+			console.log('Es conveniente ir en auto');
+        } else if (distancia > 100000) {
+            console.log('Es conveniente ir en avión');
+        }
+
+        // ejercicio 2:
+        const num = [1, 2, 3, 4, 5];
+        let max = num[0] // asigné el primer elemento como el "número mayor" inicial
+
+        for( let i = 0; i < num.length; i++) { // usé la lógica vista en el ejemplo de la clase
+            if (num[i] > max) { // comparo el número actual con el número mayor
+                max = num[i]; // en caso de ser mayor, se actualiza el número
+            }
+		}
+        console.log('el numero mayor es ' + max)
+
+        </script>
+</body>
+</html>
